@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* neutralize browser styles */
+body, html {
+	margin:0;
+	padding:0;
+	}
+/* General Styles */
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: url(../background.jpg) repeat;
+	height: 100%;
+}
+ #mainContent {
+	margin: 0 auto; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar space when the content in #sidebar ends. */
+	padding: 0;
+	width: 900px;
+	text-align: left;
+	height: 100%;
+} 
+
+/* -------------------- main content specific styles ------------------*/
+#mainContent img {
+	background: #ccc;
+	display: block;
+	padding: 3px;
+	border: 1px solid #999;
+	margin: 1.6em auto;
+}
+#mainContent p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.95em;
+	line-height: 1.6;
+	padding-right: 1.6em;
+	padding-left: 1.6em;
+	color: #333;
+	margin-top: .5em;
+}
+#mainContent a {
+	font-weight: bold;
+	color: #602E0C;
+	text-decoration: none;
+	border-bottom: 1px dotted #602E0C;
+	padding-bottom: .1em;
+}
+#mainContent a:hover {
+	color: #BA3818;
+	border: none;
+}
+
+
+#mainContent .article, #mainContent .galleryArticle {
+	background: #fff;
+	padding: 0.5em 0.5em 2em;
+	margin-bottom: 1em;
+	border: 2px solid #bbb;
+	border-top: none;
+}
+
+#mainContent h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.95em;
+	margin: 1em .5em;
+	color: #600;
+}
+/* ------ mainContent gallery styles --------------*/
+#mainContent .galleryArticle h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2.5em;
+	line-height:1.75em;
+	text-align: center;
+	color: #666;
+	margin: 1em 2em 0;
+	font-weight: normal;
+	padding: 0;
+
+	background: none;
+}
+#mainContent .galleryArticle h2 {
+	position: relative;
+	top: -.5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	line-height: 0;
+	color: #333;
+	font-weight: normal;
+	text-align: center;
+	padding: 0 0 55px;
+	background: url(file:///Macintosh%20HD/Users/ireichert/Downloads/images/headline_bkg6.jpg) no-repeat center bottom;
+}
+#mainContent .galleryArticle h3 {
+	text-align: center;
+}
+
+	
+.section {
+	height: 600px;
+	width: 400px;
+	
+	background-repeat: no-repeat;
+	position: relative;
+	float:left;
+	margin-right:40px;
+	}
+.section.one{	
+background-image: url(images/light1.png);
+}
+
+.section.two{	
+background-image: url(images/light2.png);
+}
+.overlay {
+	background-color: rgba(255,255,255,.5);
+	top: 500px;
+	position: absolute;
+	overflow: hidden;
+	height: 50px;
+	width: 400px;
+	-webkit-transition: all 1s ease-in-out .2s;
+	-moz-transition: all 1s ease-in-out .2s;
+	-ms-transition: all 1s ease-in-out .2s;
+	-o-transition: all 1s ease-in-out .2s;
+	transition: all 1s ease-in-out .2s;	
+}
+/* ---------------- Bios ----------------*/
+
+
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.rightAlign    {
+	text-align: right;
+}
+.topline{
+		border-top: 1px dotted #666;
+}
+
+.overlay:hover {
+	height: 600px;
+	top: 0px;
+}
